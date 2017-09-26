@@ -138,13 +138,58 @@ function Home(props) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = Item1;
+exports.default = RkArticleBox101;
 // use export default for async wrap
-function Item1(props) {
+function RkArticleBox101(props) {
   return React.createElement(
     "div",
-    null,
-    "Item1comp"
+    { className: "rkarticlebox101" },
+    React.createElement(
+      "ul",
+      null,
+      React.createElement(
+        "li",
+        { className: "row" },
+        React.createElement(
+          "div",
+          { className: "rkarticlebox101_img-holder" },
+          React.createElement("img", { src: "img.jpg", alt: "img alt", title: "img title" })
+        ),
+        React.createElement(
+          "article",
+          { role: "article" },
+          React.createElement(
+            "h2",
+            { className: "rkarticlebox101_heading" },
+            "Article heading"
+          ),
+          React.createElement(
+            "p",
+            null,
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          )
+        ),
+        React.createElement(
+          "footer",
+          { className: "row rkarticlebox101_extras" },
+          React.createElement(
+            "p",
+            null,
+            "extra text Lorem ipsum dolor sit amet"
+          ),
+          React.createElement(
+            "button",
+            { "data-message": "button1", className: "btn btn1-01", tabindex: "0" },
+            "read more"
+          ),
+          React.createElement(
+            "button",
+            { "data-message": "button2", className: "btn btn1-01", tabindex: "0" },
+            "read more"
+          )
+        )
+      )
+    )
   );
 }
 
