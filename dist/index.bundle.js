@@ -687,6 +687,32 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+function RkArticleBox104_imgHolder(props) {
+  return React.createElement(
+    "div",
+    { className: "rkarticlebox104_img-holder" },
+    React.createElement("img", { src: "img.jpg", alt: "img alt", title: "img title" })
+  );
+}
+
+function RkArticleBox104_article(props) {
+  return React.createElement(
+    "article",
+    { role: "article" },
+    React.createElement(
+      "h2",
+      { className: "rkarticlebox104_heading" },
+      "Article heading"
+    ),
+    React.createElement("hr", null),
+    React.createElement(
+      "p",
+      null,
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    )
+  );
+}
+
 var RkrkArticleBox104 = function (_React$Component) {
   _inherits(RkrkArticleBox104, _React$Component);
 
@@ -724,26 +750,8 @@ var RkrkArticleBox104 = function (_React$Component) {
       return React.createElement(
         "div",
         { className: "row rkarticlebox104" },
-        React.createElement(
-          "div",
-          { className: "rkarticlebox104_img-holder" },
-          React.createElement("img", { src: "img.jpg", alt: "img alt", title: "img title" })
-        ),
-        React.createElement(
-          "article",
-          { role: "article" },
-          React.createElement(
-            "h2",
-            { className: "rkarticlebox104_heading" },
-            "Article heading"
-          ),
-          React.createElement("hr", null),
-          React.createElement(
-            "p",
-            null,
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          )
-        )
+        React.createElement(RkArticleBox104_imgHolder, null),
+        React.createElement(RkArticleBox104_article, null)
       );
     }
   }]);
