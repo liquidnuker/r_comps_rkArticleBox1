@@ -364,6 +364,70 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+function RkArticleBox102_header(props) {
+  return React.createElement(
+    "header",
+    { className: "rkarticlebox102_article-title" },
+    React.createElement(
+      "h3",
+      { className: "rkarticlebox102_heading1" },
+      "Article heading1"
+    ),
+    React.createElement(
+      "p",
+      null,
+      "Lorem ipsum dolor sit amet, elit, sed do eiusmod"
+    )
+  );
+}
+
+function RkArticleBox102_extras(props) {
+  return React.createElement(
+    "footer",
+    { className: "rkarticlebox102_extras" },
+    React.createElement(
+      "p",
+      null,
+      "extra text"
+    ),
+    React.createElement(
+      "button",
+      { "data-message": "button1", className: "btn btn1-01", tabindex: "0" },
+      "read more"
+    ),
+    React.createElement(
+      "button",
+      { "data-message": "button2", className: "btn btn1-01", tabindex: "0" },
+      "read more"
+    )
+  );
+}
+
+function RkArticleBox102_imgHolder(props) {
+  return React.createElement(
+    "div",
+    { className: "rkarticlebox102_img-holder" },
+    React.createElement("img", { src: "img.jpg", alt: "img alt", title: "img title" })
+  );
+}
+
+function RkArticleBox102_article(props) {
+  return React.createElement(
+    "article",
+    { role: "article" },
+    React.createElement(
+      "h3",
+      { className: "rkarticlebox102_heading2" },
+      "Article heading2"
+    ),
+    React.createElement(
+      "p",
+      null,
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    )
+  );
+}
+
 var RkrkArticleBox102 = function (_React$Component) {
   _inherits(RkrkArticleBox102, _React$Component);
 
@@ -407,62 +471,14 @@ var RkrkArticleBox102 = function (_React$Component) {
           React.createElement(
             "li",
             null,
-            React.createElement(
-              "header",
-              { className: "rkarticlebox102_article-title" },
-              React.createElement(
-                "h3",
-                { className: "rkarticlebox102_heading1" },
-                "Article heading1"
-              ),
-              React.createElement(
-                "p",
-                null,
-                "Lorem ipsum dolor sit amet, elit, sed do eiusmod"
-              )
-            ),
+            React.createElement(RkArticleBox102_header, null),
             React.createElement(
               "div",
               { className: "row" },
-              React.createElement(
-                "div",
-                { className: "rkarticlebox102_img-holder" },
-                React.createElement("img", { src: "img.jpg", alt: "img alt", title: "img title" })
-              ),
-              React.createElement(
-                "article",
-                { role: "article" },
-                React.createElement(
-                  "h3",
-                  { className: "rkarticlebox102_heading2" },
-                  "Article heading2"
-                ),
-                React.createElement(
-                  "p",
-                  null,
-                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                )
-              )
+              React.createElement(RkArticleBox102_imgHolder, null),
+              React.createElement(RkArticleBox102_article, null)
             ),
-            React.createElement(
-              "footer",
-              { className: "rkarticlebox102_extras" },
-              React.createElement(
-                "p",
-                null,
-                "extra text"
-              ),
-              React.createElement(
-                "button",
-                { "data-message": "button1", className: "btn btn1-01", tabindex: "0" },
-                "read more"
-              ),
-              React.createElement(
-                "button",
-                { "data-message": "button2", className: "btn btn1-01", tabindex: "0" },
-                "read more"
-              )
-            )
+            React.createElement(RkArticleBox102_extras, null)
           )
         )
       );
