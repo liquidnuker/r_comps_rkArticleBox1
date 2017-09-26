@@ -98,23 +98,23 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = Home;
 
-var _RkArticleBox = __webpack_require__(5);
+var _RkArticleBox = __webpack_require__(3);
 
 var _RkArticleBox2 = _interopRequireDefault(_RkArticleBox);
 
-var _RkArticleBox3 = __webpack_require__(6);
+var _RkArticleBox3 = __webpack_require__(4);
 
 var _RkArticleBox4 = _interopRequireDefault(_RkArticleBox3);
 
-var _RkArticleBox5 = __webpack_require__(7);
+var _RkArticleBox5 = __webpack_require__(5);
 
 var _RkArticleBox6 = _interopRequireDefault(_RkArticleBox5);
 
-var _RkArticleBox7 = __webpack_require__(8);
+var _RkArticleBox7 = __webpack_require__(6);
 
 var _RkArticleBox8 = _interopRequireDefault(_RkArticleBox7);
 
-var _RkArticleBox9 = __webpack_require__(9);
+var _RkArticleBox9 = __webpack_require__(7);
 
 var _RkArticleBox10 = _interopRequireDefault(_RkArticleBox9);
 
@@ -223,9 +223,7 @@ function Home(props) {
 }
 
 /***/ }),
-/* 3 */,
-/* 4 */,
-/* 5 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -242,6 +240,53 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+function RkArticleBox101_imgHolder(props) {
+  return React.createElement(
+    "div",
+    { className: "rkarticlebox101_img-holder" },
+    React.createElement("img", { src: "img.jpg", alt: "img alt", title: "img title" })
+  );
+}
+
+function RkArticleBox101_extras(props) {
+  return React.createElement(
+    "footer",
+    { className: "row rkarticlebox101_extras" },
+    React.createElement(
+      "p",
+      null,
+      "extra text Lorem ipsum dolor sit amet"
+    ),
+    React.createElement(
+      "button",
+      { "data-message": "button1", className: "btn btn1-01", tabindex: "0" },
+      "read more"
+    ),
+    React.createElement(
+      "button",
+      { "data-message": "button2", className: "btn btn1-01", tabindex: "0" },
+      "read more"
+    )
+  );
+}
+
+function RkArticleBox101_article(props) {
+  return React.createElement(
+    "article",
+    { role: "article" },
+    React.createElement(
+      "h2",
+      { className: "rkarticlebox101_heading" },
+      "Article heading"
+    ),
+    React.createElement(
+      "p",
+      null,
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    )
+  );
+}
 
 var RkArticleBox101 = function (_React$Component) {
   _inherits(RkArticleBox101, _React$Component);
@@ -286,44 +331,9 @@ var RkArticleBox101 = function (_React$Component) {
           React.createElement(
             "li",
             { className: "row" },
-            React.createElement(
-              "div",
-              { className: "rkarticlebox101_img-holder" },
-              React.createElement("img", { src: "img.jpg", alt: "img alt", title: "img title" })
-            ),
-            React.createElement(
-              "article",
-              { role: "article" },
-              React.createElement(
-                "h2",
-                { className: "rkarticlebox101_heading" },
-                "Article heading"
-              ),
-              React.createElement(
-                "p",
-                null,
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-              )
-            ),
-            React.createElement(
-              "footer",
-              { className: "row rkarticlebox101_extras" },
-              React.createElement(
-                "p",
-                null,
-                "extra text Lorem ipsum dolor sit amet"
-              ),
-              React.createElement(
-                "button",
-                { "data-message": "button1", className: "btn btn1-01", tabindex: "0" },
-                "read more"
-              ),
-              React.createElement(
-                "button",
-                { "data-message": "button2", className: "btn btn1-01", tabindex: "0" },
-                "read more"
-              )
-            )
+            React.createElement(RkArticleBox101_imgHolder, null),
+            React.createElement(RkArticleBox101_article, null),
+            React.createElement(RkArticleBox101_extras, null)
           )
         )
       );
@@ -336,7 +346,7 @@ var RkArticleBox101 = function (_React$Component) {
 exports.default = RkArticleBox101;
 
 /***/ }),
-/* 6 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -465,7 +475,7 @@ var RkrkArticleBox102 = function (_React$Component) {
 exports.default = RkrkArticleBox102;
 
 /***/ }),
-/* 7 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -623,7 +633,7 @@ var RkArticleBox103 = function (_React$Component) {
 exports.default = RkArticleBox103;
 
 /***/ }),
-/* 8 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -708,7 +718,7 @@ var RkrkArticleBox104 = function (_React$Component) {
 exports.default = RkrkArticleBox104;
 
 /***/ }),
-/* 9 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
