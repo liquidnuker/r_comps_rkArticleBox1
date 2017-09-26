@@ -1,0 +1,556 @@
+// rkarticlebox101
+// ==================================================/
+@mixin rkarticlebox101_theme() {
+  .rkarticlebox101 {
+    background-color: #2a2a2d;
+    color: #d5d5d5;
+
+    .rkarticlebox101_heading {
+      background-color: #2c2d32;
+      color: #fff;
+      border-bottom: 1px dashed #5c5d60;
+    }
+
+    .rkarticlebox101_img-holder {
+      border: 1px solid #5c5d60;
+    }
+
+    .rkarticlebox101_extras {
+      background-color: #343437;
+    }
+  }
+}
+@include rkarticlebox101_theme();
+
+.rkarticlebox101 {
+  @extend %padd--4; // temp. use padding of parent container instead
+
+  article {
+    @extend %padd--4;
+
+    p {
+      @extend %margin-top--4;
+      line-height: 114%; /* most browsers is about 110% to 120% */
+    }
+  }
+
+  .rkarticlebox101_heading {
+    @extend %padd-bottom--4;
+  }
+
+  .rkarticlebox101_img-holder {
+    @extend %padd--4;
+    height: 100%;
+    
+  }
+
+  .rkarticlebox101_extras {
+    @extend %display--inline-block;
+    @extend %padd--6;
+    width: 100%;
+
+
+    // p {
+    //   set on mq below
+    // }
+
+    button {
+      float: right;
+      margin-right: 6px;
+    }
+  }
+} 
+
+// mobile portrait (320x480) 
+@include mq($from: mobile) {
+  .rkarticlebox101 {
+    .rkarticlebox101_img-holder {
+      width: 100%;
+    }
+
+    .rkarticlebox101_extras {
+      p {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+// mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .rkarticlebox101 {
+    .rkarticlebox101_img-holder {
+      display: block;
+      width: 20%;
+      float: left;
+    }
+
+    article {
+      display: block;
+      width: 80%;
+      float: left;
+    }
+
+    .rkarticlebox101_extras {
+      p {
+        display: inline-block;
+        margin: auto;
+      }
+    }
+  }
+}
+
+// rkarticlebox102
+// ==================================================/
+@mixin rkarticlebox102_theme() {
+  .rkarticlebox102 {
+    background-color: #2a2a2d;
+    color: #d5d5d5;
+
+    .rkarticlebox102_heading1,
+    .rkarticlebox102_heading2 {
+      color: #fff;
+    }
+
+    .rkarticlebox102_heading1 + p {
+      border-bottom: 1px dashed #5c5d60;
+    }
+
+    .rkarticlebox102_extras {
+      background-color: #343437;
+    }
+  }
+}
+@include rkarticlebox102_theme();
+
+.rkarticlebox102 {
+  @extend %padd--4; // temp. use padding of parent container instead
+
+  article {
+    @extend %padd--4;
+  }
+
+  .rkarticlebox102_heading1,
+  .rkarticlebox102_heading2 {
+    @extend %padd-bottom--4;
+  }
+
+  .rkarticlebox102_heading1 + p {
+    @extend %padd-bottom--4;
+    @extend %margin-bottom--4;
+  }
+
+  .rkarticlebox102_heading2 + p {
+    line-height: 114%;
+  }
+
+  .rkarticlebox102_article-title {
+    @extend %pos--relative;
+  }
+
+  .rkarticlebox102_extras {
+    @extend %display--inline-block;
+    @extend %padd--6;
+    width: 100%;
+
+    button {
+      float: right;
+      margin-right: 6px;
+    }
+
+    // p {
+    //   see mq below
+    // }
+  }
+
+  .rkarticlebox102_img-holder {
+    @extend %padd--4;
+    border: 1px solid #000;
+    max-width: 160px;
+  }
+}
+
+// mobile portrait (320x480) 
+@include mq($from: mobile) {
+  .rkarticlebox102 {
+    .rkarticlebox102_img-holder {
+      margin: auto;
+    }
+
+    .rkarticlebox102_extras {
+      p {
+        // display: block;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+// mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .rkarticlebox102 {
+    .rkarticlebox102_img-holder {
+      display: block;
+      margin: auto;
+      width: 20%;
+      float: left;
+    }
+
+    article {
+      display: block;
+      width: 80%;
+      float: left;
+    }
+
+    .rkarticlebox102_extras {
+      p {
+        display: inline-block;
+        margin: auto;
+      }
+    }
+  }
+}
+
+// rkarticlebox103
+// ==================================================/
+@mixin rkarticlebox103_theme() {
+  .rkarticlebox103 {
+    background-color: #2a2a2d;
+    color: #d5d5d5;
+
+    .rkarticlebox103_heading1,
+    .rkarticlebox103_heading2 {
+      color: #fff;
+    }
+
+    .rkarticlebox103_heading1 + p {
+      border-bottom: 1px dashed #5c5d60;
+    }
+
+    .rkarticlebox103_title-info {
+      background-color: #1c1d22;
+      // border: 1px solid #5c5d60;
+    }
+
+    .rkarticlebox103_extras {
+      background-color: #343437;
+    }
+  }
+}
+@include rkarticlebox103_theme();
+
+.rkarticlebox103 {
+  @extend %padd--4; // temp. use padding of parent container instead
+
+  article {
+    @extend %padd--4;
+  }
+
+  li {
+    // margin-bottom: 6px;
+  }
+
+  .rkarticlebox103_heading1,
+  .rkarticlebox103_heading2 {
+    @extend %padd-bottom--4;
+  }
+
+  .rkarticlebox103_heading1 + p {
+    @extend %padd-bottom--4;
+    @extend %margin-bottom--4;
+  }
+
+  .rkarticlebox103_heading2 + p  {
+    line-height: 114%;
+  }
+
+  .rkarticlebox103_img-holder {
+    margin: 0 4px 0 4px; /* trbl */
+  }
+
+  .rkarticlebox103_extras {
+    @extend %display--inline-block;
+    @extend %padd--6;
+    width: 100%;
+    
+    button {
+      float: right;
+      margin-right: 4px;
+    }
+
+    // p {
+    //   see mq below
+    // }
+  }
+
+  .rkarticlebox103_img-holder {
+    @extend %margin--auto;
+    @extend %padd--4;
+    background-color: #000;
+    max-width: 160px;
+    
+    > img {
+      margin-bottom: -2px;
+    }
+  }
+
+  .rkarticlebox103_badge {
+    background-color: #666;
+    border: 1px solid #000;
+    border-radius: 5px;
+    /* trbl */
+    padding: 1px 4px 1px 4px;
+    color: #fff;
+    font-size: 8pt;
+    font-weight: bold;
+  }
+
+  .rkarticlebox103_title-info {
+    @extend %padd--4;
+    @include font-size(14px);
+    @extend %margin-bottom--4;
+    
+
+    li {
+      float: left;
+      margin: 4px;
+    }
+  }
+}
+
+// mobile portrait (320x480) 
+@include mq($from: mobile) {
+  .rkarticlebox103 {
+    .rkarticlebox103_extras {
+      p {
+        margin-bottom: 10px;
+      } 
+    }
+
+    .rkarticlebox103_img-holder {
+      margin: auto;
+    }
+  }
+}
+
+// *mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .rkarticlebox103 {
+    .rkarticlebox103_img-holder {
+      display: block;
+      width: 20%;
+      float: left;
+    }
+
+    article {
+      display: block;
+      width: 80%;
+      float: left;
+    }
+
+    .rkarticlebox103_extras {
+      p {
+        display: inline-block;
+        margin-bottom: auto;
+      }  
+    }
+  }
+}
+
+// rkarticlebox104
+// ==================================================/
+@mixin rkarticlebox104_theme() {
+  .rkarticlebox104 {
+    background-color: #141416;
+    color: #d5d5d5;
+
+    .rkarticlebox104_heading {
+      color: #fff;
+    }
+
+    .rkarticlebox104_heading + hr{
+      color: #5c5d60; /* old IE */
+      background-color: #5c5d60; /* Modern Browsers */
+    }
+
+    .rkarticlebox104_img-holder {
+      border: 1px solid #000;
+      background-color: #666;
+    }
+  }
+}
+@include rkarticlebox104_theme();
+
+.rkarticlebox104 {
+  @extend %padd--4;
+
+  .rkarticlebox104_heading {
+    @extend %display--inline-block;
+    @extend %margin-bottom--4;
+  }
+
+  .rkarticlebox104_heading + hr{
+    border: none;
+    height: 1px;
+    margin: 0;
+  }
+
+  .rkarticlebox104_heading ~ p {
+    @extend %padd--4;
+    line-height: 114%;
+  }
+
+  .rkarticlebox104_img-holder {
+    @extend %padd--4;
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-right: 6px;
+    
+    > img {
+      height: 100%;
+    }
+  }
+}
+
+// mobile portrait (320x480)
+@include mq($from: mobile) {
+  .rkarticlebox104 {
+    .rkarticlebox104_img-holder {
+      float: none;
+      clear: right;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    article {
+      float: none;
+    }
+  }
+}
+
+// mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .rkarticlebox104 {
+    .rkarticlebox104_img-holder {
+      float: left;
+      margin-right: 6px;
+    }
+  }
+}
+
+// rkarticlebox105
+// ==================================================/
+@mixin rkarticlebox105_theme() {
+  .rkarticlebox105{
+    background-color: #2a2a2d;
+    color: #d5d5d5;
+
+    .rkarticlebox105_heading,
+    .rkarticlebox105_img-holder_heading {
+      color: #fff;
+    }
+
+    .rkarticlebox105_img-holder {
+      border: 1px solid #000;
+
+      > img {
+        border: 1px solid #000;
+      }
+    }
+
+    .rkarticlebox105_heading + hr {
+      color: #5c5d60; /* old IE */
+      background-color: #5c5d60; /* Modern Browsers */
+    }
+
+    .rkarticlebox105_extras {
+      background-color: #343437;
+    }
+  }
+}
+@include rkarticlebox105_theme();
+
+.rkarticlebox105 {
+  @extend %padd--4;
+
+  .rkarticlebox105_heading {
+    @extend %margin-bottom--4;
+  }
+
+  .rkarticlebox105_heading + hr {
+    border: none;
+    height: 1px;
+    margin: 0;
+  }
+
+  .rkarticlebox105_heading ~ p {
+    line-height: 114%; /* most browsers is about 110% to 120% */
+    @extend %margin-top--4;
+  }
+  
+  .rkarticlebox105_img-holder {
+    @extend %padd--4;
+    margin-right: 1%;
+    
+    > img {
+      @extend %img--responsive;
+    }
+
+    .rkarticlebox105_img-holder_heading {
+      margin: 4px 0 4px 0; /* trbl */
+    }
+
+    p {
+      line-height: 114%; /* most browsers is about 110% to 120% */
+    }
+
+    button {
+      margin-top: 4px;
+    }
+  }
+
+  .rkarticlebox105_extras {
+    @extend %padd--4;
+    @extend %margin-top--4;  
+  }
+}
+
+// rkarticlebox105 media queries (_mq.scss)
+// ==================================================/
+// mobile portrait (320x480)
+@include mq($from: mobile) {
+  .rkarticlebox105 {
+    > .rkarticlebox105_img-holder {
+      float: none;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 6px;
+      width: 100%;
+    }
+  }
+}
+
+// mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .rkarticlebox105 {
+    > .rkarticlebox105_img-holder {
+      float: left;
+      margin-right: 1%;
+      margin-bottom: auto;
+      width: 40%;
+      max-width: 256px;
+    }
+  }
+}
+
+// wide 1200px
+@include mq($from: wide) {
+  .rkarticlebox105 {
+    > .rkarticlebox105_img-holder {
+      float: left;
+      margin-right: 1%;
+      width: 40%;
+    }
+  }  
+}

@@ -97,15 +97,54 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = Home;
+
+var _RkArticleBox = __webpack_require__(5);
+
+var _RkArticleBox2 = _interopRequireDefault(_RkArticleBox);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function Home(props) {
   return React.createElement(
     "div",
-    { "class": "row" },
+    { className: "row" },
+    React.createElement(
+      "h2",
+      { className: "item-id" },
+      "rkArticleBox101"
+    ),
     React.createElement(
       "div",
-      { "class": "col-sm-12" },
-      "Home"
+      { className: "col-sm-3" },
+      "39"
+    ),
+    React.createElement(
+      "div",
+      { className: "col-sm-9" },
+      React.createElement(_RkArticleBox2.default, null)
     )
+  );
+}
+
+/***/ }),
+/* 3 */,
+/* 4 */,
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Item1;
+// use export default for async wrap
+function Item1(props) {
+  return React.createElement(
+    "div",
+    null,
+    "Item1comp"
   );
 }
 
