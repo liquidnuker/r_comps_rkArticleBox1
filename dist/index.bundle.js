@@ -106,6 +106,10 @@ var _RkArticleBox3 = __webpack_require__(6);
 
 var _RkArticleBox4 = _interopRequireDefault(_RkArticleBox3);
 
+var _RkArticleBox5 = __webpack_require__(7);
+
+var _RkArticleBox6 = _interopRequireDefault(_RkArticleBox5);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Home(props) {
@@ -148,6 +152,25 @@ function Home(props) {
         "div",
         { className: "col-sm-9" },
         React.createElement(_RkArticleBox4.default, null)
+      )
+    ),
+    React.createElement(
+      "div",
+      { className: "row" },
+      React.createElement(
+        "h2",
+        { className: "item-id" },
+        "rkArticleBox103"
+      ),
+      React.createElement(
+        "div",
+        { className: "col-sm-3" },
+        "39"
+      ),
+      React.createElement(
+        "div",
+        { className: "col-sm-9" },
+        React.createElement(_RkArticleBox6.default, null)
       )
     )
   );
@@ -394,6 +417,164 @@ var RkrkArticleBox102 = function (_React$Component) {
 }(React.Component);
 
 exports.default = RkrkArticleBox102;
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var RkArticleBox103 = function (_React$Component) {
+  _inherits(RkArticleBox103, _React$Component);
+
+  function RkArticleBox103(props) {
+    _classCallCheck(this, RkArticleBox103);
+
+    var _this = _possibleConstructorReturn(this, (RkArticleBox103.__proto__ || Object.getPrototypeOf(RkArticleBox103)).call(this, props));
+
+    _this.state = {
+      property1: ""
+    };
+
+    // 
+    _this.method1 = _this.method1.bind(_this);
+    return _this;
+  }
+
+  // lifecycle hooks
+
+  // methods
+
+
+  _createClass(RkArticleBox103, [{
+    key: "method1",
+    value: function method1() {
+      this.setState(function (prevState) {
+        return {
+          property1: store.state
+        };
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return React.createElement(
+        "div",
+        { className: "rkarticlebox103" },
+        React.createElement(
+          "ul",
+          null,
+          React.createElement(
+            "li",
+            null,
+            React.createElement(
+              "header",
+              null,
+              React.createElement(
+                "h3",
+                { className: "rkarticlebox103_heading1" },
+                "Article title"
+              ),
+              React.createElement(
+                "p",
+                null,
+                "Lorem ipsum dolor sit amet, elit, sed do eiusmod"
+              ),
+              React.createElement(
+                "ul",
+                { className: "row rkarticlebox103_title-info" },
+                React.createElement(
+                  "li",
+                  null,
+                  "\xA9\xA0Date posted"
+                ),
+                React.createElement(
+                  "li",
+                  null,
+                  "Author"
+                ),
+                React.createElement(
+                  "li",
+                  null,
+                  "Posted in Category"
+                ),
+                React.createElement(
+                  "li",
+                  null,
+                  "comments\xA0",
+                  React.createElement(
+                    "span",
+                    { className: "rkarticlebox103_badge" },
+                    "12"
+                  )
+                )
+              )
+            ),
+            React.createElement(
+              "div",
+              { className: "row" },
+              React.createElement(
+                "div",
+                { className: "rkarticlebox103_img-holder" },
+                React.createElement("img", { src: "img.jpg", alt: "img alt", title: "img title" })
+              ),
+              React.createElement(
+                "article",
+                { role: "article" },
+                React.createElement(
+                  "h3",
+                  { className: "rkarticlebox103_heading2" },
+                  "Article heading"
+                ),
+                React.createElement(
+                  "p",
+                  null,
+                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                )
+              )
+            ),
+            React.createElement(
+              "footer",
+              { className: "rkarticlebox103_extras" },
+              React.createElement(
+                "p",
+                null,
+                "extra text"
+              ),
+              React.createElement(
+                "button",
+                { "data-message": "button1", className: "btn btn1-01", tabindex: "0" },
+                "read more"
+              ),
+              React.createElement(
+                "button",
+                { "data-message": "button2", className: "btn btn1-01", tabindex: "0" },
+                "read more"
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return RkArticleBox103;
+}(React.Component);
+
+exports.default = RkArticleBox103;
 
 /***/ })
 /******/ ]);
