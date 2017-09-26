@@ -2,6 +2,7 @@ import RkArticleBox101 from "./RkArticleBox101.jsx";
 import RkArticleBox102 from "./RkArticleBox102.jsx";
 import RkArticleBox103 from "./RkArticleBox103.jsx";
 import RkArticleBox104 from "./RkArticleBox104.jsx";
+import RkArticleBox105 from "./RkArticleBox105.jsx";
 
 export default function Home(props) {
   return (
@@ -40,6 +41,15 @@ export default function Home(props) {
       <div className="col-sm-3">39</div>
       <div className="col-sm-9">
         <RkArticleBox104 />
+      </div>
+    </div>
+
+    <div className="row">
+    {/*rkArticleBox105*/}
+    <h2 className="item-id">rkArticleBox105</h2>
+      <div className="col-sm-3">39</div>
+      <div className="col-sm-9">
+        <RkArticleBox105 />
       </div>
     </div>
 

@@ -114,6 +114,10 @@ var _RkArticleBox7 = __webpack_require__(8);
 
 var _RkArticleBox8 = _interopRequireDefault(_RkArticleBox7);
 
+var _RkArticleBox9 = __webpack_require__(9);
+
+var _RkArticleBox10 = _interopRequireDefault(_RkArticleBox9);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Home(props) {
@@ -194,6 +198,25 @@ function Home(props) {
         "div",
         { className: "col-sm-9" },
         React.createElement(_RkArticleBox8.default, null)
+      )
+    ),
+    React.createElement(
+      "div",
+      { className: "row" },
+      React.createElement(
+        "h2",
+        { className: "item-id" },
+        "rkArticleBox105"
+      ),
+      React.createElement(
+        "div",
+        { className: "col-sm-3" },
+        "39"
+      ),
+      React.createElement(
+        "div",
+        { className: "col-sm-9" },
+        React.createElement(_RkArticleBox10.default, null)
       )
     )
   );
@@ -683,6 +706,120 @@ var RkrkArticleBox104 = function (_React$Component) {
 }(React.Component);
 
 exports.default = RkrkArticleBox104;
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var RkrkArticleBox105 = function (_React$Component) {
+  _inherits(RkrkArticleBox105, _React$Component);
+
+  function RkrkArticleBox105(props) {
+    _classCallCheck(this, RkrkArticleBox105);
+
+    var _this = _possibleConstructorReturn(this, (RkrkArticleBox105.__proto__ || Object.getPrototypeOf(RkrkArticleBox105)).call(this, props));
+
+    _this.state = {
+      // property1: ""
+    };
+
+    // 
+    // this.method1 = this.method1.bind(this);
+    return _this;
+  }
+
+  // lifecycle hooks
+
+  // methods
+
+
+  _createClass(RkrkArticleBox105, [{
+    key: "method1",
+    value: function method1() {
+      this.setState(function (prevState) {
+        return {
+          // property1: store.state
+        };
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return React.createElement(
+        "div",
+        { className: "rkarticlebox105" },
+        React.createElement(
+          "div",
+          { className: "rkarticlebox105_img-holder" },
+          React.createElement("img", { src: "img.jpg", alt: "img alt", title: "img title" }),
+          React.createElement(
+            "h3",
+            { className: "rkarticlebox105_img-holder_heading" },
+            "Img title"
+          ),
+          React.createElement(
+            "p",
+            null,
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          ),
+          React.createElement(
+            "button",
+            { "data-message": "button1", className: "btn btn1-01", tabindex: "0" },
+            "button1"
+          ),
+          React.createElement(
+            "button",
+            { "data-message": "button2", className: "btn btn1-01", tabindex: "0" },
+            "button2"
+          )
+        ),
+        React.createElement(
+          "article",
+          { role: "article" },
+          React.createElement(
+            "h3",
+            { className: "rkarticlebox105_heading" },
+            "Article title"
+          ),
+          React.createElement("hr", null),
+          React.createElement(
+            "p",
+            null,
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          )
+        ),
+        React.createElement(
+          "footer",
+          { className: "rkarticlebox105_extras" },
+          React.createElement(
+            "button",
+            { "data-message": "button1", className: "btn btn1-01", tabindex: "0" },
+            "extra button"
+          )
+        )
+      );
+    }
+  }]);
+
+  return RkrkArticleBox105;
+}(React.Component);
+
+exports.default = RkrkArticleBox105;
 
 /***/ })
 /******/ ]);
