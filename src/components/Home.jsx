@@ -11,8 +11,7 @@ export default function Home(props) {
     <div className="row">
     {/*rkArticleBox101*/}
     <h2 className="item-id">rkArticleBox101</h2>
-      <div className="col-sm-3">39</div>
-      <div className="col-sm-9">
+      <div className="col-sm-12">
         <RkArticleBox101 />
       </div>
     </div>
@@ -20,8 +19,7 @@ export default function Home(props) {
     <div className="row">
     {/*rkArticleBox102*/}
     <h2 className="item-id">rkArticleBox102</h2>
-      <div className="col-sm-3">39</div>
-      <div className="col-sm-9">
+      <div className="col-sm-12">
         <RkArticleBox102 />
       </div>
     </div>
@@ -29,8 +27,7 @@ export default function Home(props) {
     <div className="row">
     {/*rkArticleBox103*/}
     <h2 className="item-id">rkArticleBox103</h2>
-      <div className="col-sm-3">39</div>
-      <div className="col-sm-9">
+      <div className="col-sm-12">
         <RkArticleBox103 />
       </div>
     </div>
@@ -38,8 +35,7 @@ export default function Home(props) {
     <div className="row">
     {/*rkArticleBox104*/}
     <h2 className="item-id">rkArticleBox104</h2>
-      <div className="col-sm-3">39</div>
-      <div className="col-sm-9">
+      <div className="col-sm-12">
         <RkArticleBox104 />
       </div>
     </div>
@@ -47,8 +43,7 @@ export default function Home(props) {
     <div className="row">
     {/*rkArticleBox105*/}
     <h2 className="item-id">rkArticleBox105</h2>
-      <div className="col-sm-3">39</div>
-      <div className="col-sm-9">
+      <div className="col-sm-12">
         <RkArticleBox105 />
       </div>
     </div>

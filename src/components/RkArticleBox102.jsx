@@ -22,7 +22,7 @@ function RkArticleBox102_extras(props) {
 function RkArticleBox102_imgHolder(props) {
   return (
     <div className="rkarticlebox102_img-holder">
-    <img src="img.jpg" alt="img alt" title="img title" />
+    <img src="img.jpg" alt={props.pr_alt} title="img title" />
     </div>
   );
 }
@@ -47,7 +47,8 @@ export default class RkrkArticleBox102 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      property1: ""
+      property1: "",
+      alt: "RkArticleBox102 img alt"
     };
 
     // 
@@ -70,7 +71,8 @@ export default class RkrkArticleBox102 extends React.Component {
           <li>
             <RkArticleBox102_header />
             <div className="row">
-              <RkArticleBox102_imgHolder />
+              <RkArticleBox102_imgHolder 
+              pr_alt={this.state.alt}/>
               <RkArticleBox102_article />
             </div>
             <RkArticleBox102_extras />
